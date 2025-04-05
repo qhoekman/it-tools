@@ -1,6 +1,7 @@
 import shrek from '@/assets/prompts/shrek.png';
 import ghibli from '@/assets/prompts/ghibli.png';
 import pixar from '@/assets/prompts/pixar.png';
+import teletubby from '@/assets/prompts/teletubby.png';
 
 interface ImagePrompt {
   prompt: string;
@@ -27,6 +28,13 @@ export const imagePrompts: ImagePrompt[] = [
       'Recreate this photo as a 3D animation character of 2006. It has green skin. Looks like a friendly monster with extra small trumpets like human ears. The clothing is from the 1400s. It’s mouth is larger then other parts of its face. The monster has no hair and a big belly.',
     model: 'gpt-4o',
     image: shrek,
-    title: 'Shrek',
+    title: 'Shrek style',
+  },
+  {
+    prompt:
+      'Recreate this photo with a costume  in a humanoid shape, covered in purple plush material with a lighter square patch on the stomach. It has large, and rounded ears. A purple, triangular loop sticks out from the top of its head. The character is holding a small red handbag in its left hand. The setting is bright and cheerful, with flowers dotting the grassy hill in the background, suggesting a whimsical or fantasy environment. ',
+    model: 'gpt-4o',
+    image: teletubby,
+    title: 'Teletubby style',
   },
 ];

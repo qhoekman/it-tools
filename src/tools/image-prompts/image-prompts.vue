@@ -4,7 +4,7 @@ import type { ImagePrompt } from './image-prompts.service';
 import { imagePrompts as defaultImagePrompts } from './image-prompts.service';
 
 interface Props {
-  imagePrompts: ImagePrompt[]
+  imagePrompts: ImagePrompt[];
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -30,16 +30,16 @@ const theme = useThemeVars();
         </div>
       </div>
       <div class="flex flex-col gap-4 md:flex-row">
-        <div class="relative h-24 w-full overflow-hidden md:size-24">
+        <div class="relative h-64 w-full overflow-hidden md:size-24">
           <img
             :src="prompt.image"
             :alt="prompt.prompt"
-            class="absolute bottom-4 left-0 right-0 top-4 z-10 h-16 w-full rounded-md object-contain md:inset-0 md:size-24 md:object-cover"
+            class="absolute bottom-4 left-0 right-0 top-4 z-10 h-56 w-full rounded-md object-contain md:inset-0 md:size-24 md:object-cover"
           />
           <img
             :src="prompt.image"
             :alt="prompt.prompt"
-            class="absolute bottom-0 left-0 right-0 top-0 z-0 h-24 w-full rounded-md object-cover opacity-50 blur-md md:hidden"
+            class="absolute bottom-0 left-0 right-0 top-0 z-0 h-full w-full rounded-md object-cover opacity-50 blur-md md:hidden"
           />
         </div>
         <c-code class="w-full flex-1" :code="prompt.prompt" />
