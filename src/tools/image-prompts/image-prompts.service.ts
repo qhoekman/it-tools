@@ -2,8 +2,11 @@ import shrek from '@/assets/prompts/shrek.png';
 import ghibli from '@/assets/prompts/ghibli.png';
 import pixar from '@/assets/prompts/pixar.png';
 import teletubby from '@/assets/prompts/teletubby.png';
-import muppet from '@/assets/prompts/muppet.png';
-
+import sesamestreet from '@/assets/prompts/sesamestreet.png';
+import goomba from '@/assets/prompts/goomba.png';
+import shinchan from '@/assets/prompts/shinchan.png';
+import pixar2 from '@/assets/prompts/pixar2.png';
+import hannabarbara from '@/assets/prompts/hannabarbara.png';
 interface ImagePrompt {
   prompt: string;
   model: string;
@@ -22,7 +25,14 @@ export const imagePrompts: ImagePrompt[] = [
     prompt: 'Recreate this photo to match 3D animation movies from 2006~2010.',
     model: 'gpt-4o',
     image: pixar,
-    title: 'Pixar Style',
+    title: 'Pixar Style 1',
+  },
+  {
+    prompt:
+      'Recreate this person as stylized cartoon character rendered as a 3D video game art style typical of early 2000s console games. The character has a large, rounded head with simple, geometric features including a triangular nose, wide oval white eyes with black pupils and flat ears. Keep the face details of the photo for the character.',
+    model: 'gpt-4o',
+    image: pixar2,
+    title: 'Pixar Style 2',
   },
   {
     prompt:
@@ -40,9 +50,30 @@ export const imagePrompts: ImagePrompt[] = [
   },
   {
     prompt:
-      'Recreate this photo as a puppet-like character. The character has large white eyes with black pupils. It has prominent, round ears and thick. collar. Keep the details of the subject in the photo. ',
+      'Recreate this photo as a puppet-like character. The character has large white eyes and red round nose. It has prominent, round ears and thick. collar. Keep the details of the subject in the photo. ',
     model: 'gpt-4o',
-    image: muppet,
-    title: 'Muppet style',
+    image: sesamestreet,
+    title: 'Sesame Street style',
+  },
+  {
+    prompt:
+      'Recreate this photo with the subject as a small, 3d animated (from 2005) creature with only a head that makes up most of its body. It has no body, but only two large blacks stumps as legs. It has two large, white eyes with black pupils.',
+    model: 'gpt-4o',
+    image: goomba,
+    title: 'Goomba style',
+  },
+  {
+    prompt:
+      'Recreate this photo with the subject as cartoon illustrated in a bold, flat 2D animation style typical of late 90s to early 2000s Japanese anime for children by Yoshihito Usui. The character has a large, rounded head with exaggerated features: thick black eyebrows, massive oval-shaped black eyes with tiny white pupils. Keep the face details of the original photo in the new cartoon character.',
+    model: 'gpt-4o',
+    image: shinchan,
+    title: 'Shin-chan style',
+  },
+  {
+    prompt:
+      'Recreate this photo with the subject as a cartoon character with the Hanna Barbera art style. Keep the face details of the original photo but more expressive.',
+    model: 'gpt-4o',
+    image: hannabarbara,
+    title: 'Hanna Barbera style',
   },
 ];
