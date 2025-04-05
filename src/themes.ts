@@ -1,6 +1,13 @@
 import type { GlobalThemeOverrides } from 'naive-ui';
 
 export const lightThemeOverrides: GlobalThemeOverrides = {
+  common: {
+    primaryColor: '#F1592A',
+    primaryColorHover: '#F6993F',
+    primaryColorPressed: '#DC3805',
+    primaryColorSuppl: '#F6993F',
+  },
+
   Menu: {
     itemHeight: '32px',
   },
