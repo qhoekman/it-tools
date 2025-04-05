@@ -163,6 +163,7 @@ declare module '@vue/runtime-core' {
     SafelinkDecoder: typeof import('./src/tools/safelink-decoder/safelink-decoder.vue')['default']
     SlugifyString: typeof import('./src/tools/slugify-string/slugify-string.vue')['default']
     SpanCopyable: typeof import('./src/components/SpanCopyable.vue')['default']
+    SpinTheWheel: typeof import('./src/tools/spin-the-wheel/spin-the-wheel.vue')['default']
     SqlPrettify: typeof import('./src/tools/sql-prettify/sql-prettify.vue')['default']
     StringObfuscator: typeof import('./src/tools/string-obfuscator/string-obfuscator.vue')['default']
     SvgPlaceholderGenerator: typeof import('./src/tools/svg-placeholder-generator/svg-placeholder-generator.vue')['default']
