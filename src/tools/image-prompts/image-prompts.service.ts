@@ -1,0 +1,32 @@
+import shrek from '@/assets/prompts/shrek.png';
+import ghibli from '@/assets/prompts/ghibli.png';
+import pixar from '@/assets/prompts/pixar.png';
+
+interface ImagePrompt {
+  prompt: string;
+  model: string;
+  image: string;
+  title: string;
+}
+
+export const imagePrompts: ImagePrompt[] = [
+  {
+    prompt: 'Recreate this photo using Ghibli anime style from the 90s.',
+    model: 'gpt-4o',
+    image: ghibli,
+    title: 'Ghibli Style',
+  },
+  {
+    prompt: 'Recreate this photo to match 3D animation movies from 2006~2010.',
+    model: 'gpt-4o',
+    image: pixar,
+    title: 'Pixar Style',
+  },
+  {
+    prompt:
+      'Recreate this photo as a 3D animation character of 2006. It has green skin. Looks like a friendly monster with extra small trumpets like human ears. The clothing is from the 1400s. It’s mouth is larger then other parts of its face. The monster has no hair and a big belly.',
+    model: 'gpt-4o',
+    image: shrek,
+    title: 'Shrek',
+  },
+];
