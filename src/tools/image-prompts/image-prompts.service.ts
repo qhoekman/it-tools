@@ -2,6 +2,7 @@ import shrek from '@/assets/prompts/shrek.png';
 import ghibli from '@/assets/prompts/ghibli.png';
 import pixar from '@/assets/prompts/pixar.png';
 import teletubby from '@/assets/prompts/teletubby.png';
+import muppet from '@/assets/prompts/muppet.png';
 
 interface ImagePrompt {
   prompt: string;
@@ -36,5 +37,12 @@ export const imagePrompts: ImagePrompt[] = [
     model: 'gpt-4o',
     image: teletubby,
     title: 'Teletubby style',
+  },
+  {
+    prompt:
+      'Recreate this photo as a puppet-like character. The character has large white eyes with black pupils. It has prominent, round ears and thick. collar. Keep the details of the subject in the photo. ',
+    model: 'gpt-4o',
+    image: muppet,
+    title: 'Muppet style',
   },
 ];
