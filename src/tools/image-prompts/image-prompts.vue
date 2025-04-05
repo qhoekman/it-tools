@@ -16,8 +16,8 @@ const theme = useThemeVars();
 </script>
 
 <template>
-  <c-card class="flex flex-col gap-4">
-    <div v-for="prompt in imagePrompts" :key="prompt.title" class="flex flex-col gap-4">
+  <c-card class="flex flex-col gap-4" v-for="prompt in imagePrompts" :key="prompt.title">
+    <div class="flex flex-col gap-4">
       <div class="flex items-center justify-between">
         <span>{{ prompt.title }}</span>
         <div

@@ -32,7 +32,7 @@ export const imagePrompts: ImagePrompt[] = [
   },
   {
     prompt:
-      'Recreate this photo with a costume  in a humanoid shape, covered in purple plush material with a lighter square patch on the stomach. It has large, and rounded ears. A purple, triangular loop sticks out from the top of its head. The character is holding a small red handbag in its left hand. The setting is bright and cheerful, with flowers dotting the grassy hill in the background, suggesting a whimsical or fantasy environment. ',
+      'Recreate this photo with a costume in a humanoid shape, covered in purple plush material with a lighter square patch on the stomach. It has large, and rounded ears. A purple, triangular loop sticks out from the top of its head. The character is holding a small red handbag in its left hand. The setting is bright and cheerful, with flowers dotting the grassy hill in the background, suggesting a whimsical or fantasy environment. ',
     model: 'gpt-4o',
     image: teletubby,
     title: 'Teletubby style',
