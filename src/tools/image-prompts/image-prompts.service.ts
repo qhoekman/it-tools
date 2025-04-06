@@ -90,6 +90,13 @@ export const imagePrompts: ImagePrompt[] = [
       'Recreate this photo with large ping-pong ball white eyes with black pupils that are popping out for the subject. The expression of the character is shocked',
     model: 'gpt-4o',
     image: pingpong,
-    title: 'Ping-pong ball eyes',
+    title: 'Minion style',
+  },
+  {
+    prompt:
+      'Recreate this photo with the subject as a Rick and Morty character. Keep the face details of the original photo.',
+    model: 'gpt-4o',
+    image: rickandmorty,
+    title: 'Rick and Morty style',
   },
 ];
