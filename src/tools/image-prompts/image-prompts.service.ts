@@ -9,6 +9,7 @@ import pixar2 from '@/assets/prompts/pixar2.png';
 import hannabarbara from '@/assets/prompts/hannabarbara.png';
 import cuphead from '@/assets/prompts/cuphead.png';
 import pingpong from '@/assets/prompts/pingpong.png';
+import rickandmorty from '@/assets/prompts/rickandmorty.png';
 interface ImagePrompt {
   prompt: string;
   model: string;
