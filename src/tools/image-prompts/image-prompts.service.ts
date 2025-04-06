@@ -7,6 +7,8 @@ import goomba from '@/assets/prompts/goomba.png';
 import shinchan from '@/assets/prompts/shinchan.png';
 import pixar2 from '@/assets/prompts/pixar2.png';
 import hannabarbara from '@/assets/prompts/hannabarbara.png';
+import cuphead from '@/assets/prompts/cuphead.png';
+import pingpong from '@/assets/prompts/pingpong.png';
 interface ImagePrompt {
   prompt: string;
   model: string;
@@ -75,5 +77,19 @@ export const imagePrompts: ImagePrompt[] = [
     model: 'gpt-4o',
     image: hannabarbara,
     title: 'Hanna Barbera style',
+  },
+  {
+    prompt:
+      'Recreate this photo with the subject in the Cuphead game art style which is similar to the Mickey Mouse rubber horse animation from the 1920s to 1930s. Use a black and white filter. Keep the face details of the original photo.',
+    model: 'gpt-4o',
+    image: cuphead,
+    title: 'Cuphead style',
+  },
+  {
+    prompt:
+      'Recreate this photo with large ping-pong ball white eyes with black pupils that are popping out for the subject. The expression of the character is shocked',
+    model: 'gpt-4o',
+    image: pingpong,
+    title: 'Ping-pong ball eyes',
   },
 ];
