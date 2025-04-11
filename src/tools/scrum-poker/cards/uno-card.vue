@@ -143,7 +143,7 @@ const valueLength = computed(() => props.value.toString().length);
         id="uno__number__center"
         :x="113 + (valueLength - 1) * 3"
         y="200"
-        font-size="32"
+        :font-size="valueLength > 2 ? '18' : '28'"
         :fill="color"
         text-anchor="middle"
         dominant-baseline="middle"
@@ -152,7 +152,7 @@ const valueLength = computed(() => props.value.toString().length);
       </text>
       <text
         id="uno__number__top-left"
-        :x="41 + (valueLength - 1) * 20"
+        :x="50 + (valueLength - 1) * 20"
         y="61"
         font-size="16"
         fill="white"
@@ -163,7 +163,7 @@ const valueLength = computed(() => props.value.toString().length);
       </text>
       <text
         id="uno__number__bottom-right"
-        :x="201 - (valueLength - 1) * 20"
+        :x="190 - (valueLength - 1) * 20"
         y="331"
         font-size="16"
         fill="white"
