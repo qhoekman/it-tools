@@ -27,9 +27,7 @@ export default defineConfig({
       compositionOnly: true,
       fullInstall: true,
       strictMessage: false,
-      include: [
-        resolve(__dirname, 'locales/**'),
-      ],
+      include: [resolve(__dirname, 'locales/**')],
     }),
     AutoImport({
       imports: [
@@ -60,33 +58,31 @@ export default defineConfig({
         name: 'IT Tools',
         description: 'Aggregated set of useful tools for developers.',
         display: 'standalone',
-        lang: 'fr-FR',
+        lang: 'nl-NL',
         start_url: `${baseUrl}?utm_source=pwa&utm_medium=pwa`,
         orientation: 'any',
-        theme_color: '#18a058',
+        theme_color: '#F1592A',
         background_color: '#f1f5f9',
         icons: [
           {
-            src: '/favicon-16x16.png',
-            type: 'image/png',
-            sizes: '16x16',
-          },
-          {
-            src: '/favicon-32x32.png',
-            type: 'image/png',
+            src: '/favicon.ico',
+            type: 'image/x-icon',
             sizes: '32x32',
           },
           {
-            src: '/android-chrome-192x192.png',
-            sizes: '192x192',
+            src: '/favicon-96x96.png',
             type: 'image/png',
+            sizes: '96x96',
           },
           {
-            src: '/android-chrome-512x512.png',
-            sizes: '512x512',
+            src: './web-app-manifest-192x192.png',
             type: 'image/png',
-            purpose: 'any maskable',
+            sizes: '192x192',
           },
+          {
+            src: './web-app-manifest-512x512.png',
+            type: 'image/png',
+            sizes: '512x512',
         ],
       },
     }),
