@@ -1,6 +1,7 @@
 import { tool as base64FileConverter } from './base64-file-converter';
 import { tool as base64StringConverter } from './base64-string-converter';
 import { tool as basicAuthGenerator } from './basic-auth-generator';
+import { tool as scrumPoker } from './scrum-poker';
 import { tool as imagePrompts } from './image-prompts';
 import { tool as emailNormalizer } from './email-normalizer';
 
@@ -214,6 +215,10 @@ export const toolsByCategory: ToolCategory[] = [
       numeronymGenerator,
       asciiTextDrawer,
     ],
+  },
+  {
+    name: 'Agile',
+    components: [scrumPoker],
   },
   {
     name: 'Data',
