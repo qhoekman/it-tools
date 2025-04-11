@@ -224,7 +224,7 @@ export const toolsByCategory: ToolCategory[] = [
     name: 'Data',
     components: [phoneParserAndFormatter, ibanValidatorAndParser],
   },
-];
+].sort((a, b) => a.name.localeCompare(b.name));
 
 export const tools = toolsByCategory.flatMap(({ components }) => components);
 export const toolsWithCategory = toolsByCategory.flatMap(({ components, name }) =>
