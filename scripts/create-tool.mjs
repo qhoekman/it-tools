@@ -12,7 +12,7 @@ if (!toolName) {
   throw new Error('Please specify a toolname.');
 }
 
-const toolNameCamelCase = toolName.replace(/-./g, (x) => x[1].toUpperCase());
+const toolNameCamelCase = toolName.replace(/-./g, x => x[1].toUpperCase());
 const toolNameTitleCase = toolName[0].toUpperCase() + toolName.slice(1).replace(/-/g, ' ');
 const toolDir = join(toolsDir, toolName);
 
@@ -85,7 +85,7 @@ test.describe('Tool - ${toolNameTitleCase}', () => {
   });
 
   test('Has correct title', async ({ page }) => {
-    await expect(page).toHaveTitle('${toolNameTitleCase} - IT Tools');
+    await expect(page).toHaveTitle('${toolNameTitleCase} - Tools');
   });
 
   test('', async ({ page }) => {
@@ -97,7 +97,7 @@ test.describe('Tool - ${toolNameTitleCase}', () => {
 );
 
 const toolsIndex = join(toolsDir, 'index.ts');
-const indexContent = await readFile(toolsIndex, { encoding: 'utf-8' }).then((r) => r.split('\n'));
+const indexContent = await readFile(toolsIndex, { encoding: 'utf-8' }).then(r => r.split('\n'));
 
 indexContent.splice(3, 0, `import { tool as ${toolNameCamelCase} } from './${toolName}';`);
 writeFile(toolsIndex, indexContent.join('\n'));
