@@ -83,6 +83,7 @@ export default defineConfig({
             src: './web-app-manifest-512x512.png',
             type: 'image/png',
             sizes: '512x512',
+          },
         ],
       },
     }),
