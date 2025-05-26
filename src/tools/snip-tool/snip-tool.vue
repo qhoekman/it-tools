@@ -236,6 +236,8 @@
 
 <script setup lang="ts">
 import { ref, reactive, computed, onMounted, onBeforeUnmount, watch } from 'vue';
+import { useStyleStore } from '@/stores/style.store';
+
 // Icon imports (replace with your icon lib or use tabler/icons-vue)
 import {
   IconCircleOutline,
@@ -272,6 +274,7 @@ const isDragging = ref(false);
 const undoStack = ref<any[]>([]);
 const redoStack = ref<any[]>([]);
 const imageSize = ref<{ width: number; height: number }>({ width: 0, height: 0 });
+const styleStore = useStyleStore();
 
 function handleUndo() {
   if (drawings.value.length > 0) {
@@ -504,6 +507,7 @@ function handleDragLeave() {
 }
 
 onMounted(() => {
+  styleStore.isMenuCollapsed = true;
   document.addEventListener('paste', handlePaste);
 });
 onBeforeUnmount(() => {
