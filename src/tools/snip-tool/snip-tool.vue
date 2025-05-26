@@ -511,6 +511,7 @@ onMounted(() => {
   document.addEventListener('paste', handlePaste);
 });
 onBeforeUnmount(() => {
+  styleStore.isMenuCollapsed = false;
   document.removeEventListener('paste', handlePaste);
 });
 
